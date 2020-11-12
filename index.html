@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1. maximum-scale=1 minumum-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Nunito:wght@200&family=Raleway:wght@100&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <style>
+    *{
+        padding:0;
+        margin:0;
+    }
+
+    .slider{
+        width:90%;
+        margin:auto;
+        overflow:hidden;
+        position:relative;
+    }
+
+    .ulSlider{
+        width: 400%;
+        margin:auto;
+        list-style: none;
+        display:flex;
+        animation: cambio 20s infinite;
+        animation-timing-function:ease-in;
+    }
+    .ulSlider li{
+        width: 100%;
+        padding:0;
+        margin:0;
+    }
+
+    .ulSlider img{
+        width:100%;
+        height: 20em;
+    }
+
+    @keyframes cambio{
+            0% {margin-left:0;}
+            20% {margin-left:0;}
+            
+            25%{margin-left:-100%;}
+            45%{margin-left:-100%;}
+            
+            50%{margin-left:-200%;}
+            70%{margin-left:-200%;}
+            
+            75%{margin-left:-200%;}
+            100%{margin-left:-200%;}
+            }
+
+            h1{
+                font-size: 30px;
+            }
+
+            .uno{
+                margin-top:0.7em;
+                font-size: 18px;
+                font-family: nunito;
+                color:white;
+            }
+
+            .dos{
+                border:2px solid white;
+                width:75%;
+                font-size:14px;
+                text-align:center;
+                padding:5px;
+                border-radius:5px;
+                margin-top:4em;
+                font-family: nunito;
+                color:white;
+            }
+            .dos a {
+                 text-decoration: none;
+                 color:white;
+            }
+
+            .dos a:hover{
+                color:#EEEEEE;
+                text-decoration: underline;
+            }
+            .renova{
+                position:absolute;
+                top:10px;
+                left:10px;
+                padding-left:2em;
+                padding-right: 2em;
+                width:30em;
+                padding:1.2em;
+                color:white;
+                font-family: nunito;
+            }
+    </style>
+    <title>Slider</title>
+</head>
+<body>
+    <div class="slider">
+        <ul class="ulSlider">
+           <li><img src="img/phone.jpg"> <div class="renova">
+        <h1>RENOVA TU EQUIPO</h1>
+
+        <h2 class="uno">¡Tenemos los mejores precios del mercado en tecnologia!</h2>
+
+        <h2 class="dos"><a href="catalogo.html">Haz click aqui para conocer nuestros productos</a></h2>
+    </div></li>
+           <li><img src="img/phone2.jpg"></li>
+           <li><img src="img/phone.jpg"></li>
+           <li><img src="img/phone2.jpg"></li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
